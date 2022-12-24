@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /yss/simpeg
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /yss/simpeg/index.php/$1 [L]
+
+
+ErrorDocument 404 /yss/simpeg/index.php
